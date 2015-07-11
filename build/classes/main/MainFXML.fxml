@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-classpath-element ../../../build/classes?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="126.0" prefWidth="227.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainFXMLController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Start">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#launch" text="Launch" />
+                        <MenuItem mnemonicParsing="false" onAction="#showRecordedGamesDetails" text="Show Rec Details" />
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="launchButton" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#launch" text="Launch" />
+                <Button fx:id="showRecordedGamesDetailsButton" layoutX="23.0" layoutY="62.0" mnemonicParsing="false" onAction="#showRecordedGamesDetails" text="Show Recorded Games Details" />
+                <ToggleButton id="toggle" fx:id="patchToggleButton" layoutX="158.0" layoutY="14.0" mnemonicParsing="false" onAction="#toggle" /><Label layoutX="114.0" layoutY="18.0" text="PATCH">
+<font>
+<Font name="System Bold" size="12.0" />
+</font></Label>
+            </children>
+        </Pane>
+    </center>
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+</BorderPane>

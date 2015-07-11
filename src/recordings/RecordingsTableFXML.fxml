@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recordings.RecordingsTableFXMLController">
+<children><TableView fx:id="tableView" prefHeight="214.0" prefWidth="364.0">
+  <columns>
+    <TableColumn fx:id="nameColumn" prefWidth="260.0" text="RECORDED GAME" />
+    <TableColumn fx:id="patchColumn" prefWidth="102.0" text="PATCH" />
+  </columns>
+</TableView>
+</children></AnchorPane>

@@ -1,0 +1,15 @@
+/*
+    Created on : 2-jul-2015, 7:29:03
+    Author     : Stef
+*/
+.toggle-button {
+    -fx-graphic: url('toggleOFF.png');
+    -fx-focus-color: transparent;
+    -fx-padding: 0em ;
+}
+
+.toggle-button:selected {
+    -fx-graphic: url('toggleON.png');
+    -fx-focus-color: transparent;
+    -fx-padding: 0em ;
+}
